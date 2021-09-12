@@ -1,0 +1,339 @@
+@import "grid";
+@import "responsive";
+
+
+
+* {
+    Margin:0;
+    padding:0;
+  
+ }
+
+ $rosa: #f93867;
+ $logo: 100px;
+
+ html { 
+    font-size: 62.5%;
+ }
+ 
+
+.nav{
+    color: white;
+    padding: 3rem 1rem;  
+    font-weight: bold;
+    
+}
+
+.btn{
+    margin-top: 1rem;
+}
+
+.nav:hover{
+    color: #ce309e;
+}
+
+.navPadre{
+    display: flex;
+    justify-content: flex-end;
+    
+}
+
+.navizq{
+    align-items: flex-start;
+}
+
+.row{
+    padding-bottom: 1rem;
+}
+
+p{
+    color: $rosa;
+    font-size: 2rem;
+}
+
+h1{
+    color: white;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 4rem;
+    display: inline;
+ 
+    
+}
+
+
+
+.index__img{
+    max-width: 100%;
+    max-height: 100%;
+    margin-top: 2rem;
+}
+
+.index__img:hover{
+    opacity: 30%;
+    
+
+}
+
+body{
+    font-family: 'Quattrocento Sans', sans-serif;
+    overflow-x: hidden;
+    background-color: white;
+      
+}
+
+h4{
+    font-size: 3rem;
+    
+}
+
+h5{
+    font-size: 2rem;
+    padding-top: 1rem;
+}
+
+.servicios__p{
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.padding{
+    padding-top: 3rem;
+}
+
+.servicios__div{
+    display: flex;
+    justify-content: space-around;
+}
+
+.servicios__margin{
+    margin: 2rem;
+    
+}
+
+.servicios__iconos{
+    padding-bottom: 1rem;
+    
+}
+
+.servicios__iconos:hover{
+    width: 10rem;
+    
+}
+
+.servicios__titulo{
+    padding-bottom: 3rem;
+    font-size: 4rem; 
+    text-align: center;
+    color: $rosa;
+}
+
+.serv{
+    text-align: center;
+    width: 30rem;
+    display: block;
+}
+
+.section{
+    padding: 3rem;
+    margin: 0px 2rem;
+
+}
+
+
+.cardPadre{
+    display: flex;   
+    width: 100%;
+    
+}
+
+.subtitulo{
+    font-size: 2.5rem;
+    color: white;
+}
+
+.card__p{
+    color:  hsl(341, 83%, 93%);
+    font-size: 1.5rem
+    
+}
+
+.cardPadding{
+    background-color: $rosa;
+    border-radius: 10px;
+    width: 100%;
+    margin: 1rem 1rem;
+    padding: 1.2rem;
+    
+    
+}
+
+
+
+.numero{
+    font-size: 4rem;
+    color:  white;
+    font-weight: bold;
+}
+
+.form-label{
+    font-size: 2rem;
+    color: white;
+}
+
+
+.logo{
+    width: $logo;
+}
+
+
+nav{
+    background-color: $rosa;
+    font-size: 2rem;
+    text-transform: uppercase;
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+    padding: 0% 2rem 0px 2rem;
+
+}
+
+.parrafo{
+    width: 30rem;
+    font-weight: bold;
+    font-size: 2rem;
+    padding-left: 5rem;
+    
+}
+
+.section__div{
+    display: flex;
+    justify-content: center;
+}
+
+.imgperfil{
+    height: 360px;
+    animation-duration: 2s;
+    animation-name: opacidad;
+}
+
+@keyframes opacidad{
+    0% {opacity: 0;}
+    100%{opacity: 100%;}
+}
+
+
+.body__degrade{
+    background-image: linear-gradient(to bottom,#ce309e,#f93867,#ce309e) ;
+    
+   
+    
+}
+
+
+h3{
+    font-size: 4.5rem;
+    padding: 4rem;
+}
+
+th{
+    font-size: 2rem;
+}
+
+footer{
+    background-color: $rosa;
+    display: flex;
+    justify-content: center;    
+    padding: 5rem 0px;
+    text-align: center;
+   
+    
+   
+}
+
+
+
+ul{
+    display: inline;
+    list-style: none;
+}
+
+.footer__logo{
+    width: 10rem;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    padding-bottom: 1rem;
+    margin-left: 1cm;
+   
+
+
+}
+
+.center{
+    display: flex;
+    justify-content: center;
+}
+
+.column{
+    display: block;
+}
+
+
+
+.img{
+    width: 100%;
+    height: 100%;
+   
+}
+
+.footer__span{
+    display: block;
+    padding-top: 1rem;
+}
+
+.white{
+    color: white;
+    font-size:1.5rem;
+}
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 768px) {
+    nav{
+        height: 100%;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    h1{
+       font-size: 3rem;
+            }
+                 
+             
+    .navPadre{
+        display: block;
+        text-align: center;
+    }
+  
+  .servicios__div{
+       display: block;
+       
+   }
+
+   .cardPadre{
+       display: block;
+   }
+
+   .section__div{
+       display: block;
+   }
+
+}
+
+
